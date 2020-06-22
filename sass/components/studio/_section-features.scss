@@ -1,15 +1,6 @@
 // Features section
-
-.features__section {
-    @extend %section;
-}
-
-.features__main-title {
-    @extend %section-title, %visually-hidden;
-}
-
-.features__container {
-    @extend %container;
+.features__title {
+    @extend %visually-hidden;
 }
 
 .features__list {
@@ -21,7 +12,7 @@
     margin-right: 30px;
 }
     
-.features__title {
+.features__subtitle {
     @extend %uptitle;
     
     margin-bottom: 10px;

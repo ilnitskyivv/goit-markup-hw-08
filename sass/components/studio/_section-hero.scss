@@ -13,10 +13,9 @@
 }
 
 .hero__container {
-    @extend %container;
-
     margin-bottom: 0;
     padding: 200px 277px 195px 277px;
+    
     color: $primary-white-color;
 }
     

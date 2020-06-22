@@ -1,17 +1,7 @@
 // Team members section
 
 .team-members__section {
-    @extend %section;
-
     background-color: $secondary-bg-color;
-}
-
-.team-members__container {
-    @extend %container;
-}
-
-.team-members__title {
-    @extend %section-title;
 }
     
 .team-members__list {

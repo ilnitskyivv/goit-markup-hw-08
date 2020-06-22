@@ -1,27 +1,23 @@
 // Footer 
 
 .page-footer {
-background: $footer-bg-color;
+    background: $footer-bg-color;
 }
 
 .footer__container {
-    @extend %container;
-
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer__content {
-display: flex;
-align-items: baseline;
-flex-direction: row;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
 }
 
 // Footer logo
 
 .logo__secondary {
-    @extend %logo;
-
     display: block;
     margin-bottom: 20px;
 
@@ -31,14 +27,14 @@ flex-direction: row;
 // Footer address content
 
 .footer__address {
-display: block;
-flex-direction: column;
-width: 231px;
+    display: block;
+    flex-direction: column;
+    width: 231px;
 }
 
 .address {
-display: block;
-justify-items: flex-start;
+    display: block;
+    justify-items: flex-start;
 }
 
 .address__item {

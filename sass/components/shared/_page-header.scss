@@ -1,7 +1,6 @@
 // page header
 
 .header__container {
-    @extend %container;
     display: flex;
     align-items: center;
     margin-top: 0;
@@ -24,7 +23,6 @@
 // site logo
 
 .logo__primary {
-    @extend %logo;
     padding-top: 24px;
     padding-bottom: 25px;
 }

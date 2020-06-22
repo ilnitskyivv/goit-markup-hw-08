@@ -1,14 +1,4 @@
-.clients__section {
-    @extend %section;
-}
-
-.clients__container {
-    @extend %container;
-}
-
-.clients__main-title {
-    @extend %section-title;
-}
+// Clients section
 
 .clients__list {
     @extend %list;

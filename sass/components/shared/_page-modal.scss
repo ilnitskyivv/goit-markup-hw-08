@@ -64,14 +64,18 @@
     
     width: 11px;
     height: 11px;
+
+    fill: $primary-text-color;
     
     transform: scale(1);
-    transition: transform $function-duration $function-timing;
+    transition: transform $function-duration $function-timing, fill $function-duration $function-timing;
     
     .close-button:hover &,
     .close-button:focus & {
+        fill: $accent-color;
+
         transform: scale(1.2);
-        transition: transform $function-duration $function-timing;
+        transition: transform $function-duration $function-timing, fill $function-duration $function-timing;
     }
 }
     

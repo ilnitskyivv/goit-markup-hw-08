@@ -1,15 +1,5 @@
 .work__section {
-    @extend %section;
-
     padding-top: 0;
-}
-
-.work__container {
-    @extend %container;
-}
-
-.work__main-title {
-    @extend %section-title;
 }
 
 .work__list {
@@ -34,7 +24,7 @@
     border-radius: 4px;
 }
     
-.work__title {
+.work__subtitle {
     @extend %uptitle;
 
     position: absolute;

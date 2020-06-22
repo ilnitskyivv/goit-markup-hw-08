@@ -1,7 +1,10 @@
 @import "./base/normalize";
 @import "./utils/variables";
+@import "./base/base";
 @import "./utils/placeholders";
-@import "./components/shared/page-body";
+@import "./components/shared/section";
+@import "./components/shared/container";
+@import "./components/shared/logo";
 @import "./components/shared/page-header";
 @import "./components/studio/section-hero";
 @import "./components/shared/page-modal";

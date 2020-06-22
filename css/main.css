@@ -255,78 +255,6 @@ summary {
   display: list-item;
 }
 
-.logo__primary, .logo__secondary {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #212121;
-}
-
-.site-nav, .contacts-nav, .features__list, .work__list, .team-members__list, .socials, .clients__list, .filter__list, .product__list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-.site-nav__link, .contacts-nav__link, .clients__rectangle, .address__item, .product__link {
-  text-decoration: none;
-  color: #212121;
-}
-
-.features__section, .work__section, .team-members__section, .clients__section, .portfolio__section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.header__container, .hero__container, .features__container, .work__container, .team-members__container, .clients__container, .footer__container, .portfolio__container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1200px;
-}
-
-.button__primary, .button__secondary {
-  display: inline-block;
-  font-size: 16px;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 4px;
-  border-color: transparent;
-}
-
-.features__main-title, .hidden-label, .portfolio__main-title {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
-
-.features__title, .work__title, .footer__signup-title {
-  margin-top: 0;
-  font-size: inherit;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.features__main-title, .work__main-title, .team-members__title, .clients__main-title, .portfolio__main-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: #212121;
-}
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -348,6 +276,78 @@ body {
   line-height: 1.14;
   color: #212121;
   background-color: #ffffff;
+}
+
+.site-nav, .contacts-nav, .features__list, .work__list, .team-members__list, .socials, .clients__list, .filter__list, .product__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.site-nav__link, .contacts-nav__link, .clients__rectangle, .address__item, .product__link {
+  text-decoration: none;
+  color: #212121;
+}
+
+.button__primary, .button__secondary {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+.features__title, .hidden-label, .portfolio__title {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.features__subtitle, .work__subtitle, .footer__signup-title {
+  margin-top: 0;
+  font-size: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #212121;
 }
 
 .header__container {
@@ -619,22 +619,24 @@ body {
   display: inline-block;
   width: 11px;
   height: 11px;
+  fill: #212121;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover .icon-close-btn,
 .close-button:focus .icon-close-btn {
+  fill: #2196F3;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__caption {
@@ -809,7 +811,7 @@ body {
   margin-right: 30px;
 }
 
-.features__title {
+.features__subtitle {
   margin-bottom: 10px;
   color: #212121;
 }
@@ -867,7 +869,7 @@ body {
   border-radius: 4px;
 }
 
-.work__title {
+.work__subtitle {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1231,20 +1233,7 @@ body {
   margin-bottom: 0;
 }
 
-.product__link:hover .product__thumb,
-.product__link:focus .product__thumb,
-.product__link:hover .product__wrap::before,
-.product__link:focus .product__wrap::before {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.product__item:hover,
-.product__item:focus {
+.product__item:hover, .product__item:focus {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1277,6 +1266,16 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.product__link:hover .product__wrap::before,
+.product__link:focus .product__wrap::before {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .product__img {
   display: block;
   border-top-right-radius: 5px;
@@ -1294,6 +1293,16 @@ body {
   color: #ffffff;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product__link:hover .product__thumb,
+.product__link:focus .product__thumb {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
