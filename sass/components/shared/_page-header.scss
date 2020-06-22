@@ -1,0 +1,136 @@
+// page header
+
+.header__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.header-border {
+    border-bottom: 1px solid #ECECEC;;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+  
+// site logo
+
+.logo__primary {
+    @extend %logo;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+    
+.logo__style {
+    color: $accent-color;
+}
+    
+//Site navigation
+    
+.site-nav {
+    @extend %list;
+    display: flex;
+    margin-left: 85px;
+}
+    
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav__link {
+    @extend %link;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    transition: $function-duration $function-timing;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+
+        transition: $function-duration $function-timing;
+    }
+}
+
+.site-nav__link--current {
+    position: relative;
+    color: $accent-color;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        
+        width: 100%;
+        height: 4px;
+        
+        left: 0;
+        bottom: 0;
+        
+        border-radius: 2px;
+        background-color: $accent-color;
+    }
+}  
+
+// Contacts navigation
+    
+.contacts-nav {
+    @extend %list;
+    display: flex;
+    margin-left: auto;
+}
+    
+.contacts-nav__item:not(:last-child) {
+    margin-right: 30px;
+}
+    
+.contacts-nav__link {
+    @extend %link;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    color: $secondary-text-color;
+    
+    transition: $function-duration $function-timing;
+    
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        transition: $function-duration $function-timing;
+    }
+    &:hover .icon-contacts,
+    &:focus .icon-contacts {
+        color: $accent-color;
+        fill: $accent-color;
+        transition: $function-duration $function-timing;
+    }
+} 
+
+.icon-contacts {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+
+    fill: $secondary-text-color;
+    transition: $function-duration $function-timing;
+}
+
+.icon-envelope {
+    width: 20px;
+    height: 14px;
+}
+
+.icon-smartphone {
+    width: 11px;
+    height: 16px;
+}

@@ -1,0 +1,117 @@
+// Team members section
+
+.team-members__section {
+    @extend %section;
+
+    background-color: $secondary-bg-color;
+}
+
+.team-members__container {
+    @extend %container;
+}
+
+.team-members__title {
+    @extend %section-title;
+}
+    
+.team-members__list {
+    @extend %list;
+
+    display: flex;
+    font-size: 16px;
+    line-height: 1.19;
+}
+    
+.team-members__item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background-color: primary-white-color&;
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.team-members__pic {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+    
+.team-members__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+    
+.team-members__name {
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+    font-size: inherit;
+    font-weight: 500;
+    
+    color: &primary-text-color;
+}
+    
+.team-members__pos {
+    margin-top: 0;
+    margin-bottom: 16px;
+    
+    color: $secondary-text-color;
+}
+    
+// Team members social list
+    
+.socials {
+    @extend %list;
+    
+    display: flex;
+    flex-direction: row;
+}
+    
+.socials__item {
+    width: 44px;
+    height: 44px;
+    
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+    
+.socials__link {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    border-radius:50%;
+    
+    transition: $function-duration $function-timing;
+    
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        transition: $function-duration $function-timing;
+    }
+    &:hover .icon-socials,
+    &:focus .icon-socials   {
+        border-radius: 50%;
+        background-color: $accent-color;
+        fill: $primary-white-color;
+        transition: fill $function-duration $function-timing background-color $function-duration $function-timing;
+    }
+}
+
+.icon-socials {
+    display: block;
+    fill: $clients-logos-bg;
+    transition: fill $function-duration $function-timing;
+}
+
+.hidden-label {
+    @extend %visually-hidden;
+}

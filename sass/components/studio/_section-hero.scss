@@ -1,0 +1,65 @@
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+        
+    background-color: $footer-bg-color;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__container {
+    @extend %container;
+
+    margin-bottom: 0;
+    padding: 200px 277px 195px 277px;
+    color: $primary-white-color;
+}
+    
+.hero__title {
+    width: 646px;
+    margin-top: 0;
+    margin-bottom: 37px;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+    
+// Primary button in Hero
+    
+.button__primary {
+    @extend %button;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    height: 50px;
+    
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    vertical-align: middle;
+    
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    transition: $function-duration $function-timing;
+    
+    &:hover,
+    &:focus {
+        background-color: rgb(8, 139, 247);
+    
+        transition: $function-duration $function-timing;
+    }
+}

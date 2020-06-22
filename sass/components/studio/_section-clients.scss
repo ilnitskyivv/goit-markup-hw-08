@@ -1,0 +1,64 @@
+.clients__section {
+    @extend %section;
+}
+
+.clients__container {
+    @extend %container;
+}
+
+.clients__main-title {
+    @extend %section-title;
+}
+
+.clients__list {
+    @extend %list;
+
+    display: flex;
+}
+
+.clients__item {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+// Clients rectagle logo style
+    
+.clients__rectangle {
+    @extend %link;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    width: 170px;
+    height: 90px;
+    
+    border-radius: 4px;
+    border: 1px solid $clients-logos-bg;
+    
+    transition: $function-duration $function-timing;
+    
+    &:hover,
+    &:focus {
+        border-color:$accent-color;
+        transition: $function-duration $function-timing;
+    }
+    &:hover .icon-clients,
+    &:focus .icon-clients{
+        border-color:$accent-color;
+        fill: $accent-color;
+        transition: $function-duration $function-timing;
+    }
+}
+    
+    .icon-clients {
+        display: inline-block;
+        fill: $clients-logos-bg;
+        transition: $function-duration $function-timing;
+    }
