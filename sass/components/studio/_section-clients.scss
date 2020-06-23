@@ -4,15 +4,26 @@
     @extend %list;
 
     display: flex;
+    flex-wrap: wrap;
 }
 
 .clients__item {
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
+    display: block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    width: calc((100% - 30px) / 2);
     
-    &:not(:last-child) {
-        margin-right: 30px;
+    // &:not(:last-child) {
+    //     margin-bottom: 30px;
+    // }
+
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    &:nth-last-child(-n+2) {
+        margin-bottom: 0;
     }
 }
 
@@ -22,11 +33,10 @@
     @extend %link;
 
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     
-    width: 170px;
+    width: 100%;
     height: 90px;
     
     border-radius: 4px;
@@ -47,8 +57,8 @@
     }
 }
     
-    .icon-clients {
-        display: inline-block;
-        fill: $clients-logos-bg;
-        transition: $function-duration $function-timing;
-    }
+.icon-clients {
+    display: inline-block;
+    fill: $clients-logos-bg;
+    transition: $function-duration $function-timing;
+}

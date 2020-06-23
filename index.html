@@ -11,48 +11,52 @@
     <!-- Шапка сайта -->
     <header class="page-header">
         <div class="header__container container">
-            <nav class="nav">
-                <a href="./index.html" class="logo__primary logo" id="back-to-web" aria-current="true">
-                    <span class="logo__style">Web </span>Studio
-                </a>
-                <ul class="site-nav">
-                    <li class="site-nav__item">
-                        <a href="./index.html" aria-current="true" class="site-nav__link site-nav__link--current">Студия</a>
+            <a href="./index.html" class="logo__primary logo" id="back-to-web" aria-current="true">
+                <span class="logo__style">Web </span>Studio
+            </a>
+            <div class="menu">
+                <nav class="nav">
+                    <ul class="site-nav">
+                        <li class="site-nav__item">
+                            <a href="./index.html" aria-current="true" class="site-nav__link site-nav__link--current">Студия</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="./contacts.html" class="site-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts-nav">
+                    <li class="contacts-nav__item">
+                        <a href="mailto:info@devstudio.com" class="contacts-nav__link" title="Отравить Email">
+                            <svg class="icon-envelope icon-contacts" width="17" height="12">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="site-nav__item">
-                        <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a href="./contacts.html" class="site-nav__link">Контакты</a>
+                    <li class="contacts-nav__item">
+                        <a href="tel:+380961111111" class="contacts-nav__link" title="Позвонить">
+                            <svg class="icon-smartphone icon-contacts" width="10" height="14.94">
+                                <use href="./images/sprite.svg#icon-smartphone" class="use"></use>
+                            </svg>                        
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="contacts-nav">
-                <li class="contacts-nav__item">
-                    <a href="mailto:info@devstudio.com" class="contacts-nav__link" title="Отравить Email">
-                        <svg class="icon-envelope icon-contacts" width="17" height="12">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts-nav__item">
-                    <a href="tel:+380961111111" class="contacts-nav__link" title="Позвонить">
-                        <svg class="icon-smartphone icon-contacts" width="10" height="14.94">
-                            <use href="./images/sprite.svg#icon-smartphone" class="use"></use>
-                        </svg>                        
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
     <main>
     <!-- Герой -->
     <section class="hero">
         <div class="hero__container container">
-            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button class="button__primary" data-modal-open>Заказать услугу</button>
+            <div class="hero__content">
+                <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
+                <button class="button__primary" data-modal-open>Заказать услугу</button>
+            </div>
         </div>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -184,7 +188,7 @@
             <h2 class="team-members__title section-title">Наша команда</h2>
             <ul class="team-members__list">
                 <li class="team-members__item">
-                    <img src="./images/john-smith.jpg" width="270" height="260" alt="John Smith Photo" class="team-members__pic">
+                    <img src="./images/mobile/nikolay-kucherenko-mobile.jpg" width="450" height="320" alt="John Smith Photo" class="team-members__pic">
                     <div class="team-members__content">
                         <h3 class="team-members__name">Николай Кучеренко</h3>
                         <p lang="en" class="team-members__pos">Product Designer</p>
@@ -229,7 +233,7 @@
                     </div>
                 </li>
                 <li class="team-members__item">
-                    <img src="./images/marta-stewart.jpg" width="270" height="260" alt="Marta Stewart Photo" class="team-members__pic">
+                    <img src="./images/mobile/olga-ivanova-mobile.jpg" width="450" height="320" alt="Marta Stewart Photo" class="team-members__pic">
                     <div class="team-members__content">
                         <h3 class="team-members__name">Ольга Иванова</h3>
                         <p lang="en" class="team-members__pos">Frontend Developer</p>
@@ -274,7 +278,7 @@
                     </div>  
                 </li>
                 <li class="team-members__item">
-                    <img src="./images/robert-jakis.jpg" width="270" height="260" alt="Robert Jakis Photo" class="team-members__pic">
+                    <img src="./images/mobile/andrey-shevchenko-mobile.jpg" width="450" height="320" alt="Robert Jakis Photo" class="team-members__pic">
                     <div class="team-members__content">
                         <h3 class="team-members__name">Андрей Шевченко</h3>
                         <p lang="en" class="team-members__pos">Marketing</p>
@@ -319,7 +323,7 @@
                     </div>
                 </li>
                 <li class="team-members__item">
-                    <img src="./images/martin-doe.jpg" width="270" height="260" alt="Martin Doe Photo" class="team-members__pic">
+                    <img src="./images/mobile/ivan-nikolaev-mobile.jpg" width="450" height="320" alt="Martin Doe Photo" class="team-members__pic">
                     <div class="team-members__content">
                         <h3 class="team-members__name">Иван Николаев</h3>
                         <p lang="en" class="team-members__pos">UI Designer</p>
@@ -488,12 +492,14 @@
                     <label>
                         <b class="footer__signup-title">Подпишитесь на рассылку</b>
                         <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="footer__email">
-                        <button type="submit" class="button__primary">
-                            Подписаться
-                            <svg class="icon-plane" width="24" height="24">
-                                <use href="./images/sprite.svg#icon-plane"></use>
-                            </svg>
-                        </button>
+                        <div class="footer__button">
+                            <button type="submit" class="button__primary">
+                                Подписаться
+                                <svg class="icon-plane" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-plane"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </label>
                 </div>
             </div>

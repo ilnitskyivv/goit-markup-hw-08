@@ -1,11 +1,12 @@
 .work__section {
+    display: none;
     padding-top: 0;
 }
 
 .work__list {
     @extend %list;
     
-    display: flex;
+    // display: flex;
     margin-right: auto;
     margin-left: auto;
 }

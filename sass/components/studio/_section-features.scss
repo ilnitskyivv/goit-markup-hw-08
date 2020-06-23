@@ -5,17 +5,19 @@
 
 .features__list {
     @extend %list;
-    display: flex;
+    // display: flex;
 }
     
 .features__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
 }
     
 .features__subtitle {
     @extend %uptitle;
     
     margin-bottom: 10px;
+    text-align: center;
+
     color: $primary-text-color;
 }
     
@@ -26,7 +28,8 @@
     justify-content: center;
     margin-bottom: 30px;
     
-    width: 270px;
+    // width: 270px;
+    width: 100%;
     height: 120px;
     
     background-color: $secondary-bg-color;
