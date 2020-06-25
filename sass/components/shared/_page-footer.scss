@@ -7,14 +7,28 @@
 .footer__container {
     padding-top: 60px;
     padding-bottom: 60px;
-
 }
 
 .footer__content {
     display: block;
     text-align: center;
-    justify-content: center;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+}
 
+.content-top {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        text-align: initial;
+    }
 }
 
 // Footer logo
@@ -30,13 +44,24 @@
 
 .footer__address {
     display: block;
+    
+    @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+    }
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 80px;
+    }
 }
 
 .address {
     display: block;
     align-items: center;
-    // justify-items: flex-start;
+    @media screen and (min-width: $desktop) {
+
+    }
 }
 
 .address__item {
@@ -60,14 +85,15 @@
 // Footer Subscription content
 
 .footer__socials {
-    display: block;
-    justify-content: center;
-    // margin-left: 69px;
-    margin-bottom: 60px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 99px;
+    }
 }
 
 .icon-plane {
-    display: block;
     width: 24px;
     height: 24px;
     margin-left: 10px;
@@ -81,21 +107,34 @@
 
     display: block;
     margin-bottom: 20px;
-    align-items: center;
+    text-align: center;
 
     color: $primary-white-color;
+
+    @media screen and (min-width: $desktop) {
+        text-align: initial;
+    }
 }
 
-// .footer__subscription {
-//     display: flex;
-//     flex-direction: column;
-//     margin-left: 94px;
-// }
+.footer__subscription {
+    display: block;
+    align-items: flex-start;
+}
+
+.footer__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: $desktop) {
+        display: block;
+    }
+}
 
 .footer__email {
     vertical-align: middle;
     padding: 18px 12px;
-    // margin-right: 8px;
     margin-bottom: 20px;
     width: 100%;
     height: 50px;
@@ -109,5 +148,14 @@
 
     color: $footer-text-color;
     background-color: unset;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 450px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin-bottom: 0;
+        margin-right: 7px;
+    }
 }
 

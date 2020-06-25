@@ -11,40 +11,58 @@
     <!-- Шапка сайта -->
     <header class="page-header header-border">
         <div class="header__container container">
-            <nav class="nav">
-                <a href="./index.html" class="logo logo__primary">
-                    <span class="logo__style">Web </span>Studio
-                </a>
-                <ul class="site-nav">
-                    <li class="site-nav__item">
-                        <a href="./index.html" class="site-nav__link">Студия</a>
+            <a href="./index.html" class="logo logo__primary">
+                <span class="logo__style">Web </span>Studio
+            </a>
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu" data-menu-button>
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use class="icon-cross" href="./images/sprite.svg#icon-cross-menu"></use>
+                  <use class="icon-menu" href="./images/sprite.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+            <div class="menu" id="menu" data-menu>
+                <nav class="nav">
+                    <ul class="site-nav">
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="site-nav__link">
+                                Студия
+                            </a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="site-nav__link site-nav__link--current" aria-current="true">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#" class="site-nav__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link" title="Отравить Email">
+                            <svg class="icon-envelope icon-contacts" width="17" height="12">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
                     </li>
-                    <li class="site-nav__item">
-                        <a href="./portfolio.html" class="site-nav__link site-nav__link--current" aria-current="true">Портфолио</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a href="./contacts.html" class="site-nav__link">Контакты</a>
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link" title="Позвонить">
+                            <svg class="icon-smartphone icon-contacts" width="10" height="14.94">
+                                <use href="./images/sprite.svg#icon-smartphone" class="use"></use>
+                            </svg>                        
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
-            </nav>
-            <ul class="contacts-nav">
-                <li class="contacts-nav__item">
-                    <a href="mailto:info@devstudio.com" class="contacts-nav__link" title="Отравить Email">
-                        <svg class="icon-envelope icon-contacts" width="17" height="12">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts-nav__item">
-                    <a href="tel:+380961111111" class="contacts-nav__link" title="Позвонить">
-                        <svg class="icon-smartphone icon-contacts" width="10" height="14.94">
-                            <use href="./images/sprite.svg#icon-smartphone" class="use"></use>
-                        </svg>                        
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -55,15 +73,15 @@
                 <div class="filter__list">
                     <button type="button" class="button__secondary">Все</button>
                     <button type="button" class="button__secondary">Веб-сайты</button>
-                    <button type="button" class="button__secondary">Дизайн</button>
                     <button type="button" class="button__secondary">Приложения</button>
+                    <button type="button" class="button__secondary">Дизайн</button>
                     <button type="button" class="button__secondary">Маркетинг</button>
                 </div>
                 <ul class="product__list">
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/techno-crack.jpg" width="370" height="294" alt="Ноутбук" class="product__img">
+                                <img src="./images/mobile/techno-crack-mobile.jpg" width="450" height="294" alt="Ноутбук" class="product__img">
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -76,11 +94,11 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/poster.jpg" width="370" height="294" alt="Два баскетболиста в прыжке" class="product__img">
+                                <img src="./images/mobile/poster-mobile.jpg" width="450" height="294" alt="Два баскетболиста в прыжке" class="product__img">
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
-                                <h2 class="product__name">Постер New Orlean vs Golden Star</h2>
+                                <h2 class="product__name">Постер Pelicans vs Warriors</h2>
                                 <p class="product__desc">Дизайн</p>
                             </div>
                         </a>
@@ -88,7 +106,7 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/restaurant.jpg" width="370" height="294" alt="Логотип ресторана" class="product__img">
+                                <img src="./images/mobile/restaurant-mobile.jpg" width="450" height="294" alt="Логотип ресторана" class="product__img">
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -100,7 +118,7 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/headphones.jpg" width="370" height="294" alt="Наушники" class="product__img">
+                                <img src="./images/mobile/headphones-mobile.jpg" width="450" height="294" alt="Наушники" class="product__img">
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -112,7 +130,7 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/boxes.jpg" width="370" height="294" alt="Две коробки" class="product__img">
+                                <img src="./images/mobile/boxes-mobile.jpg" width="450" height="294" alt="Две коробки" class="product__img">
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -124,7 +142,7 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/design.jpg" width="370" height="294" alt="Дизайн проекта на монитор" class="product__img">
+                                <img src="./images/mobile/design-mobile.jpg" width="450" height="294" alt="Дизайн проекта на монитор" class="product__img">
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -136,7 +154,7 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/book.jpg" width="370" height="294" alt="Открытая книга" class="product__img">
+                                <img src="./images/mobile/book-mobile.jpg" width="450" height="294" alt="Открытая книга" class="product__img">
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -148,7 +166,7 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/label-tag.jpg" width="370" height="294" alt="Тег метки" class="product__img">
+                                <img src="./images/mobile/label-tag-mobile.jpg" width="450" height="294" alt="Тег метки" class="product__img">
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -160,7 +178,7 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/desktopapps.jpg" width="370" height="294" alt="Ноутбук в работе" class="product__img">
+                                <img src="./images/mobile/desktopapps-mobile.jpg" width="450" height="294" alt="Ноутбук в работе" class="product__img">
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -177,59 +195,61 @@
     <footer class="page-footer">
         <div class="footer__container container">
             <div class="footer__content">
-                <div class="footer__address">
-                    <a href="#back-to-web" class="logo__secondary logo" aria-current="true">
-                        <span class="logo__style">Web </span>Studio
-                    </a>
-                    <address class="address">
-                        <a href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank" class="address__location address__item">г. Киев, пр-т Леси Украинки, 26</a>
-                        <a href="mailto:info@example.com" class="address__item">info@example.com</a>
-                        <a href="tel:+380991111111" class="address__item">+38 099 111 11 11</a>
-                    </address>
-                </div>
-                <div class="footer__socials">
-                    <b class="footer__signup-title">Присоединяйтесь</b>    
-                    <ul class="socials">
-                        <li class="socials__item">
-                            <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram" title="Подписывайтесь в Instagram" class="socials__link ftr-insta-icon">
-                                <svg class="icon-socials" width="44" height="44">
-                                    <use href="./images/sprite.svg#icon-instagram-ftr">
-                                        <p class="hidden-label">Подписывайтесь в Instagram</p>
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter" title="Подписывайтесь в Twitter" class="socials__link ftr-twit-icon">
-                                <svg class="icon-socials" width="44" height="44">
-                                    <use href="./images/sprite.svg#icon-twitter-ftr">
-                                        <p class="hidden-label">Подписывайтесь в Twitter</p>
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook" title="Подписывайтесь в Facebook" class="socials__link ftr-fb-icon">
-                                <svg class="icon-socials" width="44" height="44">
-                                    <use href="./images/sprite.svg#icon-facebook-ftr">
-                                        <p class="hidden-label">Подписывайтесь в Facebook</p>
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin" title="Подписывайтесь в Linkedin" class="socials__link ftr-link-icon">
-                                <svg class="icon-socials" width="44" height="44">
-                                    <use href="./images/sprite.svg#icon-linkedin-ftr">
-                                        <p class="hidden-label">Подписывайтесь в Linkedin</p>
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="content-top">
+                    <div class="footer__address">
+                        <a href="#back-to-web" class="logo__secondary logo" aria-current="true">
+                            <span class="logo__style">Web </span>Studio
+                        </a>
+                        <address class="address">
+                            <a href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank" class="address__location address__item">г. Киев, пр-т Леси Украинки, 26</a>
+                            <a href="mailto:info@example.com" class="address__item">info@example.com</a>
+                            <a href="tel:+380991111111" class="address__item">+38 099 111 11 11</a>
+                        </address>
+                    </div>
+                    <div class="footer__socials">
+                        <b class="footer__signup-title">Присоединяйтесь</b>    
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram" title="Подписывайтесь в Instagram" class="socials__link ftr-insta-icon">
+                                    <svg class="icon-socials" width="44" height="44">
+                                        <use href="./images/sprite.svg#icon-instagram-ftr">
+                                            <p class="hidden-label">Подписывайтесь в Instagram</p>
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter" title="Подписывайтесь в Twitter" class="socials__link ftr-twit-icon">
+                                    <svg class="icon-socials" width="44" height="44">
+                                        <use href="./images/sprite.svg#icon-twitter-ftr">
+                                            <p class="hidden-label">Подписывайтесь в Twitter</p>
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook" title="Подписывайтесь в Facebook" class="socials__link ftr-fb-icon">
+                                    <svg class="icon-socials" width="44" height="44">
+                                        <use href="./images/sprite.svg#icon-facebook-ftr">
+                                            <p class="hidden-label">Подписывайтесь в Facebook</p>
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin" title="Подписывайтесь в Linkedin" class="socials__link ftr-link-icon">
+                                    <svg class="icon-socials" width="44" height="44">
+                                        <use href="./images/sprite.svg#icon-linkedin-ftr">
+                                            <p class="hidden-label">Подписывайтесь в Linkedin</p>
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer__subscription">
-                    <label>
+                    <label class="footer__label">
                         <b class="footer__signup-title">Подпишитесь на рассылку</b>
                         <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="footer__email">
                         <button type="submit" class="button button__primary">
@@ -250,5 +270,6 @@
   
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
       </script> -->
+      <script src="./js/menu.js"></script>
 </body>
 </html>

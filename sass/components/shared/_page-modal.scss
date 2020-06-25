@@ -10,6 +10,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     transition: opacity $function-duration $function-timing;
+    overflow-y: scroll;
     
     &.is-hidden {
         opacity: 0;
@@ -36,6 +37,13 @@
     
     transform: translate(-50%, -50%) scale(1);
     transition: transform $function-duration $function-timing;
+    
+    @media screen and (min-width: $mobile) {
+        max-width: 450px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: 528px;
+    }
 }
     
 .close-button {
@@ -227,10 +235,14 @@
     
 .form__checkbox-label {
     font-size: 12px;
-    line-height: 1.16;    
+    line-height: 1.16;
     letter-spacing: 0.03em;
     
     color: $secondary-text-color;
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
     
     .policy {

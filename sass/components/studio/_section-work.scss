@@ -1,12 +1,16 @@
 .work__section {
     display: none;
     padding-top: 0;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 .work__list {
     @extend %list;
     
-    // display: flex;
+    display: flex;
     margin-right: auto;
     margin-left: auto;
 }

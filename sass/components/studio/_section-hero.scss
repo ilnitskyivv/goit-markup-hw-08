@@ -1,6 +1,4 @@
 .hero {
-    // max-width: 1600px;
-    // height: 600px;
     max-width: $mobile;
     height: 400px;
     margin-right: auto;
@@ -12,6 +10,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 1199px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/hero-tablet.jpg);
+    }
+    @media screen and (min-width: $desktop) {
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/desktop/hero-desktop.jpg);
+    }
 }
 
 .hero__container {
@@ -23,8 +31,6 @@
     height: 100%;
     width: 100%;
     
-    // padding: 200px 277px 195px 277px;
-    
     color: $primary-white-color;
 }
 
@@ -33,12 +39,15 @@
     margin-bottom: 30px;
     
     font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.36;
     font-size: 26px;
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
     
 // Primary button in Hero

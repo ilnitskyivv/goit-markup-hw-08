@@ -14,31 +14,47 @@
             <a href="./index.html" class="logo__primary logo" id="back-to-web" aria-current="true">
                 <span class="logo__style">Web </span>Studio
             </a>
-            <div class="menu">
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu" data-menu-button>
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use class="icon-cross" href="./images/sprite.svg#icon-cross-menu"></use>
+                  <use class="icon-menu" href="./images/sprite.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+            <div class="menu" id="menu" data-menu>
                 <nav class="nav">
                     <ul class="site-nav">
                         <li class="site-nav__item">
-                            <a href="./index.html" aria-current="true" class="site-nav__link site-nav__link--current">Студия</a>
+                            <a href="./index.html" aria-current="true" class="site-nav__link site-nav__link--current">
+                                Студия
+                            </a>
                         </li>
                         <li class="site-nav__item">
-                            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+                            <a href="./portfolio.html" class="site-nav__link">
+                                Портфолио
+                            </a>
                         </li>
                         <li class="site-nav__item">
-                            <a href="./contacts.html" class="site-nav__link">Контакты</a>
+                            <a href="#" class="site-nav__link">
+                                Контакты
+                            </a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="contacts-nav">
-                    <li class="contacts-nav__item">
-                        <a href="mailto:info@devstudio.com" class="contacts-nav__link" title="Отравить Email">
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link" title="Отравить Email">
                             <svg class="icon-envelope icon-contacts" width="17" height="12">
                                 <use href="./images/sprite.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="contacts-nav__item">
-                        <a href="tel:+380961111111" class="contacts-nav__link" title="Позвонить">
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link" title="Позвонить">
                             <svg class="icon-smartphone icon-contacts" width="10" height="14.94">
                                 <use href="./images/sprite.svg#icon-smartphone" class="use"></use>
                             </svg>                        
@@ -168,15 +184,15 @@
             <h2 class="work__title section-title">Чем мы занимаемся</h2>
             <ul class="work__list">
                 <li class="work__item">                    
-                    <img src="./images/desktopapps.jpg" alt="Ноутбук в работе" width="370" height="294" class="work__img">
+                    <img src="./images/desktop/desktopapps-desktop.jpg" alt="Ноутбук в работе" width="370" height="294" class="work__img">
                     <h3 class="work__subtitle">Десктопные приложения</h3>                                      
                 </li>
                 <li class="work__item">                    
-                    <img src="./images/cellphoneapps.jpg" alt="Мобильный телефон" width="370" height="294" class="work__img">
+                    <img src="./images/desktop/cellphoneapps-desktop.jpg" alt="Мобильный телефон" width="370" height="294" class="work__img">
                     <h3 class="work__subtitle">Мобильные приложения</h3>                    
                 </li>
                 <li class="work__item">
-                    <img src="./images/design.jpg" alt="Дизайн проекта на мониторе" width="370" height="294" class="work__img">
+                    <img src="./images/desktop/design-desktop.jpg" alt="Дизайн проекта на мониторе" width="370" height="294" class="work__img">
                     <h3 class="work__subtitle">Дизайнерские решения</h3>
                 </li>
             </ul>
@@ -437,77 +453,74 @@
     <footer class="page-footer">
         <div class="footer__container container">
             <div class="footer__content">
-                <div class="footer__address">
-                    <a href="#back-to-web" class="logo__secondary logo" aria-current="true">
-                        <span class="logo__style">Web </span>Studio
-                    </a>
-                    <address class="address">
-                        <a href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank" class="address__location address__item">г. Киев, пр-т Леси Украинки, 26</a>
-                        <a href="mailto:info@example.com" class="address__item">info@example.com</a>
-                        <a href="tel:+380991111111" class="address__item">+38 099 111 11 11</a>
-                    </address>
-                </div>
-                <div class="footer__socials">
-                    <b class="footer__signup-title">Присоединяйтесь</b>    
-                    <ul class="socials">
-                        <li class="socials__item">
-                            <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram" title="Подписывайтесь в Instagram" class="socials__link ftr-insta-icon">
-                                <svg class="icon-socials" width="44" height="44">
-                                    <use href="./images/sprite.svg#icon-instagram-ftr">
-                                        <p class="hidden-label">Подписывайтесь в Instagram</p>
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter" title="Подписывайтесь в Twitter" class="socials__link ftr-twit-icon">
-                                <svg class="icon-socials" width="44" height="44">
-                                    <use href="./images/sprite.svg#icon-twitter-ftr">
-                                        <p class="hidden-label">Подписывайтесь в Twitter</p>
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook" title="Подписывайтесь в Facebook" class="socials__link ftr-fb-icon">
-                                <svg class="icon-socials" width="44" height="44">
-                                    <use href="./images/sprite.svg#icon-facebook-ftr">
-                                        <p class="hidden-label">Подписывайтесь в Facebook</p>
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="socials__item">
-                            <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin" title="Подписывайтесь в Linkedin" class="socials__link ftr-link-icon">
-                                <svg class="icon-socials" width="44" height="44">
-                                    <use href="./images/sprite.svg#icon-linkedin-ftr">
-                                        <p class="hidden-label">Подписывайтесь в Linkedin</p>
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="content-top">
+                    <div class="footer__address">
+                        <a href="#back-to-web" class="logo__secondary logo" aria-current="true">
+                            <span class="logo__style">Web </span>Studio
+                        </a>
+                        <address class="address">
+                            <a href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank" class="address__location address__item">г. Киев, пр-т Леси Украинки, 26</a>
+                            <a href="mailto:info@example.com" class="address__item">info@example.com</a>
+                            <a href="tel:+380991111111" class="address__item">+38 099 111 11 11</a>
+                        </address>
+                    </div>
+                    <div class="footer__socials">
+                        <b class="footer__signup-title">Присоединяйтесь</b>    
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram" title="Подписывайтесь в Instagram" class="socials__link ftr-insta-icon">
+                                    <svg class="icon-socials" width="44" height="44">
+                                        <use href="./images/sprite.svg#icon-instagram-ftr">
+                                            <p class="hidden-label">Подписывайтесь в Instagram</p>
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter" title="Подписывайтесь в Twitter" class="socials__link ftr-twit-icon">
+                                    <svg class="icon-socials" width="44" height="44">
+                                        <use href="./images/sprite.svg#icon-twitter-ftr">
+                                            <p class="hidden-label">Подписывайтесь в Twitter</p>
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook" title="Подписывайтесь в Facebook" class="socials__link ftr-fb-icon">
+                                    <svg class="icon-socials" width="44" height="44">
+                                        <use href="./images/sprite.svg#icon-facebook-ftr">
+                                            <p class="hidden-label">Подписывайтесь в Facebook</p>
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin" title="Подписывайтесь в Linkedin" class="socials__link ftr-link-icon">
+                                    <svg class="icon-socials" width="44" height="44">
+                                        <use href="./images/sprite.svg#icon-linkedin-ftr">
+                                            <p class="hidden-label">Подписывайтесь в Linkedin</p>
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer__subscription">
-                    <label>
+                    <label class="footer__label">
                         <b class="footer__signup-title">Подпишитесь на рассылку</b>
                         <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="footer__email">
-                        <div class="footer__button">
-                            <button type="submit" class="button__primary">
-                                Подписаться
-                                <svg class="icon-plane" width="24" height="24">
-                                    <use href="./images/sprite.svg#icon-plane"></use>
-                                </svg>
-                            </button>
-                        </div>
+                        <button type="submit" class="button button__primary">
+                            Подписаться
+                            <svg class="icon-plane" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-plane"></use>
+                            </svg>
+                        </button>
                     </label>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Скрипт для автосмены высоты фиксированого заголовка  -->
-
     <!-- <script>
         const { height: pageHeaderHeight } = document
           .querySelector(".page-header")
@@ -515,9 +528,7 @@
   
         document.body.style.paddingTop = `${pageHeaderHeight}px`;
       </script> -->
-
-    <!-- Скрипт для работы бэкдропа и модалки -->
-
-    <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
+      <script src="./js/modal.js"></script>
 </body>
 </html>
