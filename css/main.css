@@ -418,7 +418,7 @@ img {
 }
 
 .logo__primary {
-  display: inline-block;
+  display: block;
   padding-top: 15px;
   padding-bottom: 16px;
 }
