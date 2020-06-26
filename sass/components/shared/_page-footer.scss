@@ -14,11 +14,12 @@
     text-align: center;
     @media screen and (min-width: $desktop) {
         display: flex;
+        align-items: baseline;
     }
 }
 
 .content-top {
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
         display: flex;
         align-items: baseline;
         justify-content: center;
@@ -27,6 +28,7 @@
     }
     @media screen and (min-width: $desktop) {
         display: flex;
+        align-items: baseline;
         text-align: initial;
     }
 }
@@ -45,10 +47,10 @@
 .footer__address {
     display: block;
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $up-to-tablet) {
     margin-bottom: 60px;
     }
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
         margin-right: 165px;
     }
     @media screen and (min-width: $desktop) {
@@ -59,9 +61,6 @@
 .address {
     display: block;
     align-items: center;
-    @media screen and (min-width: $desktop) {
-
-    }
 }
 
 .address__item {
@@ -85,7 +84,7 @@
 // Footer Subscription content
 
 .footer__socials {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $up-to-tablet) {
         margin-bottom: 60px;
     }
     @media screen and (min-width: $desktop) {

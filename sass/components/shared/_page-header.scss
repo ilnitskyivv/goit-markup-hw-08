@@ -2,15 +2,15 @@
 
 .page-header {
     position: relative;
+    height: 60px;
+
     @media screen and (min-width: $tablet) {
-        height: 79px;
-        
+        height: 80px;
     }
 }
 
 .header__container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-top: 0;
     padding-top: 0;
@@ -27,13 +27,13 @@
 // site logo
 
 .logo__primary {
-    display: block;
-    padding-top: 16px;
+    display: inline-block;
+    padding-top: 15px;
     padding-bottom: 16px;
 
     @media screen and (min-width: $tablet) {
-        padding-top: 24px;
-        padding-bottom: 25px;
+        padding-top: 25px;
+        padding-bottom: 24px;
         margin-right: 80px;
     }
     @media screen and (min-width: $desktop) {
@@ -47,6 +47,7 @@
 
 .menu-button {
     display: inline-flex;
+    align-self: center;
     margin: 0;
     padding: 0;
     border: none;
@@ -75,7 +76,7 @@
     margin: 0;
     text-align: center;
   
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $up-to-tablet) {
         display: none;
         position: absolute;
         z-index: 999;
@@ -87,6 +88,7 @@
         border-top: 1px solid #ECECEC;
         background-color: $primary-white-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);        
+        
         &.is-open {
           display: block;
         }
@@ -102,11 +104,13 @@
     
 .site-nav {
     @extend %list;
+    
+    @media screen and (max-width: $up-to-tablet) {
     margin-bottom: 60px;
+    }
 
     @media screen and (min-width: $tablet) {
         display: flex;
-        margin-bottom: 0;
     }
 }
     
@@ -126,7 +130,7 @@
 
     @media screen and (min-width: $tablet) {
         display: flex;
-        padding-top: 32px;
+        padding-top: 33px;
         padding-bottom: 32px;
     }
 
@@ -168,7 +172,7 @@
     @extend %list;
 
     @media screen and (min-width: $tablet) {
-        display: inline-block;
+        display: block;
         margin-left: auto;
         text-align: start;
     }
@@ -180,11 +184,8 @@
 }
     
 .contacts__item:not(:last-child) {
+    @media screen and (max-width: $up-to-tablet) {
     margin-bottom: 16px;
-
-    @media screen and (min-width: $tablet) and(max-width: 1199px) {
-        margin-bottom: 5px;
-        margin-top: 21px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -192,10 +193,24 @@
     }
 }
 
-.contacts__item:last-child {
-    @media screen and (max-width: 1199px) {
-        margin-top: 5px;
-        margin-bottom: 21px;
+.link-envelope {
+    @extend %link;
+
+    @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
+        display: block;
+        padding-bottom: 5px;
+        padding-top: 19px;
+    }
+}
+
+
+.link-smartphone {
+    @extend %link;
+    
+    @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 19px;
     }
 }
     
@@ -209,7 +224,7 @@
     @media screen and (min-width: $desktop) {
         display: block;
         padding-top: 32px;
-        padding-bottom: 32px;
+        padding-bottom: 31px;
     }
 
     &:hover,
@@ -239,7 +254,7 @@
     height: 14px;
 }
 
-// .icon-smartphone {
-//     width: 11px;
-//     height: 16px;
-// }
+.icon-smartphone {
+    width: 11px;
+    height: 16px;
+}

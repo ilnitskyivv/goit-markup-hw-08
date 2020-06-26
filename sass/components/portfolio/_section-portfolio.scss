@@ -89,10 +89,15 @@
 
         transition: transform $function-duration $function-timing;
     }
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        width: calc((100% - 30px) / 2);
+    
+    @media screen and (min-width: $tablet) {
         margin-right: 30px;
         margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
+        width: calc((100% - 30px) / 2);
+
         &:nth-child(2n) {
             margin-right: 0;
         }
@@ -104,8 +109,7 @@
     }
     @media screen and (min-width: $desktop) {
         width: calc((100% - (30px * 2)) / 3);
-        margin-right: 30px;
-        margin-bottom: 30px;
+
         &:nth-child(3n) {
             margin-right: 0;
         }

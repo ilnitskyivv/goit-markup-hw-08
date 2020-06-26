@@ -29,7 +29,7 @@
     &:not(:last-child) {
         margin-bottom: 30px;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
 
         width: calc((100% - 30px) / 2);
         margin-right: 30px;
@@ -43,8 +43,6 @@
     }
     @media screen and (min-width: $desktop) {
         width: calc((100% - 90px) / 4);
-        margin-right: 0;
-        margin-bottom: 0;
         &:not(:last-child) {
             margin-right: 30px;
             margin-bottom: 0;
