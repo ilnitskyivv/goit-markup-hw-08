@@ -1365,8 +1365,8 @@ img {
   .clients__item {
     margin: 0;
   }
-  .clients__item:last-child {
-    margin-right: 0;
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
