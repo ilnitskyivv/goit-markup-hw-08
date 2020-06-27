@@ -87,9 +87,6 @@
     @media screen and (max-width: $up-to-tablet) {
         margin-bottom: 60px;
     }
-    @media screen and (min-width: $desktop) {
-        margin-right: 99px;
-    }
 }
 
 .icon-plane {
@@ -118,6 +115,9 @@
 .footer__subscription {
     display: block;
     align-items: flex-start;
+    @media screen and (min-width: $desktop) {
+        margin-left: 99px;
+    }
 }
 
 .footer__label {

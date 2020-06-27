@@ -33,12 +33,44 @@
     @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
         max-width: $tablet;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/jpg/hero-768.jpg);
+
+        // 2x-экраны, изображение 1536x800
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/jpg/hero-768@2x.jpg);
+        }
+
+        // 3x-экраны, изображение 2304x1200
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (-webkit-min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/tablet/jpg/hero-768@3x.jpg);
+        }
     }
 
     @media screen and (min-width: $desktop) {
         max-width: 1600px;
         height: 600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/desktop/jpg/hero-1600.jpg);
+        
+        // 2x-экраны, изображение 1536x800
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/desktop/jpg/hero-1600@2x.jpg);
+        }
+    
+        // 3x-экраны, изображение 2304x1200
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (-webkit-min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/desktop/jpg/hero-1600@3x.jpg);
+        }
     }
 }
 
@@ -72,7 +104,7 @@
     
 // Primary button in Hero
     
-.button__primary {
+.button-primary {
     @extend %button;
 
     display: inline-flex;

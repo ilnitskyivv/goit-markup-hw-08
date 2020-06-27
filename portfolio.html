@@ -70,17 +70,49 @@
             <div class="portfolio__container container">
                 <h1 class="portfolio__title section-title hidden-label">Портфолио</h1>
                 <div class="filter__list">
-                    <button type="button" class="button__secondary">Все</button>
-                    <button type="button" class="button__secondary">Веб-сайты</button>
-                    <button type="button" class="button__secondary">Приложения</button>
-                    <button type="button" class="button__secondary">Дизайн</button>
-                    <button type="button" class="button__secondary">Маркетинг</button>
+                    <button type="button" class="button-secondary">Все</button>
+                    <button type="button" class="button-secondary">Веб-сайты</button>
+                    <button type="button" class="button-secondary">Приложения</button>
+                    <button type="button" class="button-secondary">Дизайн</button>
+                    <button type="button" class="button-secondary">Маркетинг</button>
                 </div>
                 <ul class="product__list">
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/mobile/jpg/crack-450.jpg" width="450" height="294" alt="Ноутбук" class="product__img">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./images/mobile/webp/crack-450.webp 1x, 
+                                                ./images/mobile/webp/crack-450@2x.webp 2x,
+                                                ./images/mobile/webp/crack-450@3x.webp 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/mobile/jpg/crack-450.jpg 1x, 
+                                                ./images/mobile/jpg/crack-450@2x.jpg 2x,
+                                                ./images/mobile/jpg/crack-450@3x.jpg 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/tablet/webp/crack-354.webp 1x, 
+                                                ./images/tablet/webp/crack-354@2x.webp 2x,
+                                                ./images/tablet/webp/crack-354@3x.webp 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/tablet/jpg/crack-354.jpg 1x,
+                                                ./images/tablet/jpg/crack-354@2x.jpg 2x,
+                                                ./images/tablet/jpg/crack-354@3x.jpg 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/desktop/webp/crack-370.webp 1x, 
+                                                ./images/desktop/webp/crack-370@2x.webp 2x,
+                                                ./images/desktop/webp/crack-370@3x.webp 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/desktop/jpg/crack-370.jpg 1x,
+                                                ./images/desktop/jpg/crack-370@2x.jpg 2x,
+                                                ./images/desktop/jpg/crack-370@3x.jpg 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <img src="./images/mobile/jpg/crack-450.jpg" alt="Ноутбук" class="product__img"/>
+                                </picture>
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -93,7 +125,39 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/mobile/jpg/poster-450.jpg" width="450" height="294" alt="Два баскетболиста в прыжке" class="product__img">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./images/mobile/webp/poster-450.webp 1x, 
+                                                ./images/mobile/webp/poster-450@2x.webp 2x,
+                                                ./images/mobile/webp/poster-450@3x.webp 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/mobile/jpg/poster-450.jpg 1x, 
+                                                ./images/mobile/jpg/poster-450@2x.jpg 2x,
+                                                ./images/mobile/jpg/poster-450@3x.jpg 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/tablet/webp/poster-354.webp 1x, 
+                                                ./images/tablet/webp/poster-354@2x.webp 2x,
+                                                ./images/tablet/webp/poster-354@3x.webp 3x"
+                                        media="(max-width: 1199px)"/>       
+                                    <source type="image/jpeg"
+                                        srcset="./images/tablet/jpg/poster-354.jpg 1x,
+                                                ./images/tablet/jpg/poster-354@2x.jpg 2x,
+                                                ./images/tablet/jpg/poster-354@3x.jpg 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/desktop/webp/poster-370.webp 1x, 
+                                                ./images/desktop/webp/poster-370@2x.webp 2x,
+                                                ./images/desktop/webp/poster-370@3x.webp 3x"
+                                        media="(min-width: 1200px)"/>        
+                                    <source type="image/jpeg"
+                                        srcset="./images/desktop/jpg/poster-370.jpg 1x,
+                                                ./images/desktop/jpg/poster-370@2x.jpg 2x,
+                                                ./images/desktop/jpg/poster-370@3x.jpg 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <img src="./images/mobile/jpg/poster-450.jpg" alt="Два баскетболиста в прыжке" class="product__img"/>
+                                </picture>
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -105,7 +169,39 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/mobile/jpg/restaurant-450.jpg" width="450" height="294" alt="Логотип ресторана" class="product__img">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./images/mobile/webp/restaurant-450.webp 1x, 
+                                                ./images/mobile/webp/restaurant-450@2x.webp 2x,
+                                                ./images/mobile/webp/restaurant-450@3x.webp 3x"
+                                        media="(max-width: 767px)"/>        
+                                    <source type="image/jpeg"
+                                        srcset="./images/mobile/jpg/restaurant-450.jpg 1x, 
+                                                ./images/mobile/jpg/restaurant-450@2x.jpg 2x,
+                                                ./images/mobile/jpg/restaurant-450@3x.jpg 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/tablet/webp/restaurant-354.webp 1x, 
+                                                ./images/tablet/webp/restaurant-354@2x.webp 2x,
+                                                ./images/tablet/webp/restaurant-354@3x.webp 3x"
+                                        media="(max-width: 1199px)"/>       
+                                    <source type="image/jpeg"
+                                        srcset="/images/tablet/jpg/restaurant-354.jpg 1x,
+                                                ./images/tablet/jpg/restaurant-354@2x.jpg 2x,
+                                                ./images/tablet/jpg/restaurant-354@3x.jpg 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/desktop/webp/restaurant-370.webp 1x, 
+                                                ./images/desktop/webp/restaurant-370@2x.webp 2x,
+                                                ./images/desktop/webp/restaurant-370@3x.webp 3x"
+                                        media="(min-width: 1200px)"/>        
+                                    <source type="image/jpeg"
+                                        srcset="./images/desktop/jpg/restaurant-370.jpg 1x,
+                                                ./images/desktop/jpg/restaurant-370@2x.jpg 2x,
+                                                ./images/desktop/jpg/restaurant-370@3x.jpg 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <img src="./images/mobile/jpg/restaurant-450.jpg" alt="Логотип ресторана" class="product__img"/>
+                                </picture>
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -117,7 +213,39 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/mobile/jpg/headphones-450.jpg" width="450" height="294" alt="Наушники" class="product__img">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./images/mobile/webp/headphones-450.webp 1x, 
+                                                ./images/mobile/webp/headphones-450@2x.webp 2x,
+                                                ./images/mobile/webp/headphones-450@3x.webp 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/mobile/jpg/headphones-450.jpg 1x, 
+                                                ./images/mobile/jpg/headphones-450@2x.jpg 2x,
+                                                ./images/mobile/jpg/headphones-450@3x.jpg 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/tablet/webp/headphones-354.webp 1x, 
+                                                ./images/tablet/webp/headphones-354@2x.webp 2x,
+                                                ./images/tablet/webp/headphones-354@3x.webp 3x"
+                                        media="(max-width: 1199px)"/>        
+                                    <source type="image/jpeg"
+                                        srcset="./images/tablet/jpg/headphones-354.jpg 1x,
+                                                ./images/tablet/jpg/headphones-354@2x.jpg 2x,
+                                                ./images/tablet/jpg/headphones-354@3x.jpg 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/desktop/webp/headphones-370.webp 1x, 
+                                                ./images/desktop/webp/headphones-370@2x.webp 2x,
+                                                ./images/desktop/webp/headphones-370@3x.webp 3x"
+                                        media="(min-width: 1200px)"/>            
+                                    <source type="image/jpeg"
+                                        srcset="./images/desktop/jpg/headphones-370.jpg 1x,
+                                                ./images/desktop/jpg/headphones-370@2x.jpg 2x,
+                                                ./images/desktop/jpg/headphones-370@3x.jpg 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <img src="./images/mobile/jpg/headphones-450.jpg" alt="Наушники" class="product__img"/>
+                                </picture>
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -129,7 +257,39 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/mobile/jpg/boxes-450.jpg" width="450" height="294" alt="Две коробки" class="product__img">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./images/mobile/webp/boxes-450.webp 1x, 
+                                                ./images/mobile/webp/boxes-450@2x.webp 2x,
+                                                ./images/mobile/webp/boxes-450@3x.webp 3x"
+                                        media="(max-width: 767px)"/>        
+                                    <source type="image/jpeg"
+                                        srcset="./images/mobile/jpg/boxes-450.jpg 1x, 
+                                                ./images/mobile/jpg/boxes-450@2x.jpg 2x,
+                                                ./images/mobile/jpg/boxes-450@3x.jpg 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/tablet/webp/boxes-354.webp 1x, 
+                                                ./images/tablet/webp/boxes-354@2x.webp 2x,
+                                                ./images/tablet/webp/boxes-354@3x.webp 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/tablet/jpg/boxes-354.jpg 1x,
+                                                ./images/tablet/jpg/boxes-354@2x.jpg 2x,
+                                                ./images/tablet/jpg/boxes-354@3x.jpg 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/desktop/webp/boxes-370.webp 1x, 
+                                                ./images/desktop/webp/boxes-370@2x.webp 2x,
+                                                ./images/desktop/webp/boxes-370@3x.webp 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/desktop/jpg/boxes-370.jpg 1x,
+                                                ./images/desktop/jpg/boxes-370@2x.jpg 2x,
+                                                ./images/desktop/jpg/boxes-370@3x.jpg 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <img src="./images/mobile/jpg/boxes-450.jpg" alt="Две коробки" class="product__img"/>
+                                </picture>
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -141,7 +301,39 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/mobile/jpg/design-450.jpg" width="450" height="294" alt="Дизайн проекта на монитор" class="product__img">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./images/mobile/webp/design-450.webp 1x, 
+                                                ./images/mobile/webp/design-450@2x.webp 2x,
+                                                ./images/mobile/webp/design-450@3x.webp 3x"
+                                        media="(max-width: 767px)"/>        
+                                    <source type="image/jpeg"
+                                        srcset="./images/mobile/jpg/design-450.jpg 1x, 
+                                                ./images/mobile/jpg/design-450@2x.jpg 2x,
+                                                ./images/mobile/jpg/design-450@3x.jpg 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/tablet/webp/design-354.webp 1x, 
+                                                ./images/tablet/webp/design-354@2x.webp 2x,
+                                                ./images/tablet/webp/design-354@3x.webp 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/tablet/jpg/design-354.jpg 1x,
+                                                ./images/tablet/jpg/design-354@2x.jpg 2x,
+                                                ./images/tablet/jpg/design-354@3x.jpg 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/desktop/webp/design-370.webp 1x, 
+                                                ./images/desktop/webp/design-370@2x.webp 2x,
+                                                ./images/desktop/webp/design-370@3x.webp 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/desktop/jpg/design-370.jpg 1x,
+                                                ./images/desktop/jpg/design-370@2x.jpg 2x,
+                                                ./images/desktop/jpg/design-370@3x.jpg 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <img src="./images/mobile/jpg/design-450.jpg" alt="Дизайн проекта на монитор" class="product__img"/>
+                                </picture>
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -153,7 +345,39 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/mobile/jpg/book-450.jpg" width="450" height="294" alt="Открытая книга" class="product__img">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./images/mobile/webp/book-450.webp 1x, 
+                                                ./images/mobile/webp/book-450@2x.webp 2x,
+                                                ./images/mobile/webp/book-450@3x.webp 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/mobile/jpg/book-450.jpg 1x, 
+                                                ./images/mobile/jpg/book-450@2x.jpg 2x,
+                                                ./images/mobile/jpg/book-450@3x.jpg 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/tablet/webp/book-354.webp 1x, 
+                                                ./images/tablet/webp/book-354@2x.webp 2x,
+                                                ./images/tablet/webp/book-354@3x.webp 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/tablet/jpg/book-354.jpg 1x,
+                                                ./images/tablet/jpg/book-354@2x.jpg 2x,
+                                                ./images/tablet/jpg/book-354@3x.jpg 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/desktop/webp/book-370.webp 1x, 
+                                                ./images/desktop/webp/book-370@2x.webp 2x,
+                                                ./images/desktop/webp/book-370@3x.webp 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/desktop/jpg/book-370.jpg 1x,
+                                                ./images/desktop/jpg/book-370@2x.jpg 2x,
+                                                ./images/desktop/jpg/book-370@3x.jpg 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <img src="./images/mobile/jpg/book-450.jpg" alt="Открытая книга" class="product__img"/>
+                                </picture>
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -165,7 +389,39 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/mobile/jpg/label-tag-450.jpg" width="450" height="294" alt="Тег метки" class="product__img">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./images/mobile/webp/label-tag-450.webp 1x, 
+                                                ./images/mobile/webp/label-tag-450@2x.webp 2x,
+                                                ./images/mobile/webp/label-tag-450@3x.webp 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/mobile/jpg/label-tag-450.jpg 1x, 
+                                                ./images/mobile/jpg/label-tag-450@2x.jpg 2x,
+                                                ./images/mobile/jpg/label-tag-450@3x.jpg 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/tablet/webp/label-tag-354.webp 1x, 
+                                                ./images/tablet/webp/label-tag-354@2x.webp 2x,
+                                                ./images/tablet/webp/label-tag-354@3x.webp 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/tablet/jpg/label-tag-354.jpg 1x,
+                                                ./images/tablet/jpg/label-tag-354@2x.jpg 2x,
+                                                ./images/tablet/jpg/label-tag-354@3x.jpg 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/desktop/webp/label-tag-370.webp 1x, 
+                                                ./images/desktop/webp/label-tag-370@2x.webp 2x,
+                                                ./images/desktop/webp/label-tag-370@3x.webp 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/desktop/jpg/label-tag-370.jpg 1x,
+                                                ./images/desktop/jpg/label-tag-370@2x.jpg 2x,
+                                                ./images/desktop/jpg/label-tag-370@3x.jpg 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <img src="./images/mobile/jpg/label-tag-450.jpg" alt="Тег метки" class="product__img"/>
+                                </picture>
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -177,7 +433,39 @@
                     <li class="product__item">
                         <a href="" class="product__link">
                             <div class="product__wrap">
-                                <img src="./images/mobile/jpg/laptop-450.jpg" width="450" height="294" alt="Ноутбук в работе" class="product__img">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./images/mobile/webp/laptop-450.webp 1x, 
+                                                ./images/mobile/webp/laptop-450@2x.webp 2x,
+                                                ./images/mobile/webp/laptop-450@3x.webp 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/mobile/jpg/laptop-450.jpg 1x, 
+                                                ./images/mobile/jpg/laptop-450@2x.jpg 2x,
+                                                ./images/mobile/jpg/laptop-450@3x.jpg 3x"
+                                        media="(max-width: 767px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/tablet/webp/laptop-354.webp 1x, 
+                                                ./images/tablet/webp/laptop-354@2x.webp 2x,
+                                                ./images/tablet/webp/laptop-354@3x.webp 3x"
+                                        media="(max-width: 1199px)"/>        
+                                    <source type="image/jpeg"
+                                        srcset="./images/tablet/jpg/laptop-354.jpg 1x,
+                                                ./images/tablet/jpg/laptop-354@2x.jpg 2x,
+                                                ./images/tablet/jpg/laptop-354@3x.jpg 3x"
+                                        media="(max-width: 1199px)"/>
+                                    <source type="image/webp"
+                                        srcset="./images/desktop/webp/laptop-370.webp 1x, 
+                                                ./images/desktop/webp/laptop-370@2x.webp 2x,
+                                                ./images/desktop/webp/laptop-370@3x.webp 3x"
+                                        media="(min-width: 1200px)"/>
+                                    <source type="image/jpeg"
+                                        srcset="./images/desktop/jpg/laptop-370.jpg 1x,
+                                                ./images/desktop/jpg/laptop-370@2x.jpg 2x,
+                                                ./images/desktop/jpg/laptop-370@3x.jpg 3x"
+                                        media="(min-width: 1200px)"/>
+                                <img src="./images/mobile/jpg/laptop-450.jpg" alt="Ноутбук в работе" class="product__img"/>
+                                </picture>
                                 <p class="product__thumb">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                             <div class="product__meta">
@@ -251,7 +539,7 @@
                     <label class="footer__label">
                         <b class="footer__signup-title">Подпишитесь на рассылку</b>
                         <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="footer__email">
-                        <button type="submit" class="button button__primary">
+                        <button type="submit" class="button-primary">
                             Подписаться
                             <svg class="icon-plane" width="24" height="24">
                                 <use href="./images/sprite.svg#icon-plane"></use>

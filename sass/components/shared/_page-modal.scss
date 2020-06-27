@@ -73,7 +73,7 @@
     width: 11px;
     height: 11px;
 
-    fill: $primary-text-color;
+    fill: currentColor;
     
     transform: scale(1);
     transition: transform $function-duration $function-timing, fill $function-duration $function-timing;

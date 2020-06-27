@@ -70,7 +70,7 @@
         <div class="hero__container container">
             <div class="hero__content">
                 <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
-                <button class="button__primary" data-modal-open>Заказать услугу</button>
+                <button class="button-primary" data-modal-open>Заказать услугу</button>
             </div>
         </div>
         <div class="backdrop is-hidden" data-modal>
@@ -128,7 +128,7 @@
                             </span> 
                         </label>
                     </div>
-                    <button type="submit" class="button button__primary">Отправить</button>
+                    <button type="submit" class="button-primary">Отправить</button>
                 </form>
             </div>
         </div>
@@ -183,15 +183,51 @@
             <h2 class="work__title section-title">Чем мы занимаемся</h2>
             <ul class="work__list">
                 <li class="work__item">                    
-                    <img src="./images/desktop/jpg/laptop-370.jpg" alt="Ноутбук в работе" width="370" height="294" class="work__img">
-                    <h3 class="work__subtitle">Десктопные приложения</h3>                                      
-                </li>
-                <li class="work__item">                    
-                    <img src="./images/desktop/jpg/cellphone-370.jpg" alt="Мобильный телефон" width="370" height="294" class="work__img">
-                    <h3 class="work__subtitle">Мобильные приложения</h3>                    
+                    <picture>
+                        <source type="image/webp"
+                            srcset="./images/desktop/webp/laptop-370.webp 1x,
+                                    ./images/desktop/webp/laptop-370@2x.webp 2x,
+                                    ./images/desktop/webp/laptop-370@3x.webp 3x"
+                            media="(min-width: 1200px)"/>
+                        <source type="image/jpeg"
+                            srcset="./images/desktop/jpg/laptop-370.jpg 1x,
+                                    ./images/desktop/jpg/laptop-370@2x.jpg 2x,
+                                    ./images/desktop/jpg/laptop-370@3x.jpg 3x"
+                            media="(min-width: 1200px)"/>
+                        <img src="./images/desktop/jpg/laptop-370.jpg" alt="Ноутбук в работе" class="work__img"/>
+                    </picture>
+                    <h3 class="work__subtitle">Десктопные приложения</h3>
                 </li>
                 <li class="work__item">
-                    <img src="./images/desktop/jpg/design-370.jpg" alt="Дизайн проекта на мониторе" width="370" height="294" class="work__img">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="./images/desktop/webp/cellphone-370.webp 1x,
+                                    ./images/desktop/webp/cellphone-370@2x.webp 2x,
+                                    ./images/desktop/webp/cellphone-370@3x.webp 3x"
+                            media="(min-width: 1200px)"/>
+                        <source type="image/jpeg"
+                            srcset="./images/desktop/jpg/cellphone-370.jpg 1x,
+                                    ./images/desktop/jpg/cellphone-370@2x.jpg 2x,
+                                    ./images/desktop/jpg/cellphone-370@3x.jpg 3x"
+                            media="(min-width: 1200px)"/>
+                        <img src="./images/desktop/jpg/cellphone-370.jpg" alt="Мобильный телефон" class="work__img"/>
+                    </picture>
+                    <h3 class="work__subtitle">Мобильные приложения</h3>
+                </li>
+                <li class="work__item">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="./images/desktop/webp/design-370.webp 1x,
+                                    ./images/desktop/webp/design-370@2x.webp 2x,
+                                    ./images/desktop/webp/design-370@3x.webp 3x"
+                            media="(min-width: 1200px)"/>
+                        <source type="image/jpeg"
+                            srcset="./images/desktop/jpg/design-370.jpg 1x,
+                                    ./images/desktop/jpg/design-370@2x.jpg 2x,
+                                    ./images/desktop/jpg/design-370@3x.jpg 3x"
+                            media="(min-width: 1200px)"/>
+                        <img src="./images/desktop/jpg/design-370.jpg" alt="Дизайн проекта на мониторе" class="work__img"/>
+                    </picture>
                     <h3 class="work__subtitle">Дизайнерские решения</h3>
                 </li>
             </ul>
@@ -203,7 +239,39 @@
             <h2 class="team-members__title section-title">Наша команда</h2>
             <ul class="team-members__list">
                 <li class="team-members__item">
-                    <img src="./images/mobile/jpg/kucherenko-450.jpg" width="450" height="320" alt="John Smith Photo" class="team-members__pic">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="./images/mobile/webp/kucherenko-450.webp 1x, 
+                                    ./images/mobile/webp/kucherenko-450@2x.webp 2x,
+                                    ./images/mobile/webp/kucherenko-450@3x.webp 3x"
+                            media="(max-width: 767px)"/>        
+                        <source type="image/jpeg"
+                            srcset="./images/mobile/jpg/kucherenko-450.jpg 1x, 
+                                    ./images/mobile/jpg/kucherenko-450@2x.jpg 2x,
+                                    ./images/mobile/jpg/kucherenko-450@3x.jpg 3x"
+                            media="(max-width: 767px)"/>
+                        <source type="image/webp"
+                            srcset="./images/tablet/webp/kucherenko-354.webp 1x, 
+                                    ./images/tablet/webp/kucherenko-354@2x.webp 2x,
+                                    ./images/tablet/webp/kucherenko-354@3x.webp 3x"
+                            media="(max-width: 1199px)"/>        
+                        <source type="image/jpeg"
+                            srcset="./images/tablet/jpg/kucherenko-354.jpg 1x,
+                                    ./images/tablet/jpg/kucherenko-354@2x.jpg 2x,
+                                    ./images/tablet/jpg/kucherenko-354@3x.jpg 3x"
+                            media="(max-width: 1199px)"/>
+                        <source type="image/webp"
+                            srcset="./images/desktop/webp/kucherenko-270.webp 1x, 
+                                    ./images/desktop/webp/kucherenko-270@2x.webp 2x,
+                                    ./images/desktop/webp/kucherenko-270@3x.webp 3x"
+                            media="(min-width: 1200px)"/>        
+                        <source type="image/jpeg"
+                            srcset="./images/desktop/jpg/kucherenko-270.jpg 1x,
+                                    ./images/desktop/jpg/kucherenko-270@2x.jpg 2x,
+                                    ./images/desktop/jpg/kucherenko-270@3x.jpg 3x"
+                            media="(min-width: 1200px)"/>
+                        <img src="./images/mobile/jpg/kucherenko-450.jpg" alt="Фото Николая Кучеренко" class="team-members__pic"/>
+                    </picture>
                     <div class="team-members__content">
                         <h3 class="team-members__name">Николай Кучеренко</h3>
                         <p lang="en" class="team-members__pos">Product Designer</p>
@@ -248,7 +316,39 @@
                     </div>
                 </li>
                 <li class="team-members__item">
-                    <img src="./images/mobile/jpg/ivanova-450.jpg" width="450" height="320" alt="Marta Stewart Photo" class="team-members__pic">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="./images/mobile/webp/ivanova-450.webp 1x, 
+                                    ./images/mobile/webp/ivanova-450@2x.webp 2x,
+                                    ./images/mobile/webp/ivanova-450@3x.webp 3x"
+                            media="(max-width: 767px)"/>        
+                        <source type="image/jpeg"
+                            srcset="./images/mobile/jpg/ivanova-450.jpg 1x, 
+                                    ./images/mobile/jpg/ivanova-450@2x.jpg 2x,
+                                    ./images/mobile/jpg/ivanova-450@3x.jpg 3x"
+                            media="(max-width: 767px)"/>
+                        <source type="image/webp"
+                            srcset="./images/tablet/webp/ivanova-354.webp 1x, 
+                                    ./images/tablet/webp/ivanova-354@2x.webp 2x,
+                                    ./images/tablet/webp/ivanova-354@3x.webp 3x"
+                            media="(max-width: 1199px)"/>        
+                        <source type="image/jpeg"
+                            srcset="./images/tablet/jpg/ivanova-354.jpg 1x,
+                                    ./images/tablet/jpg/ivanova-354@2x.jpg 2x,
+                                    ./images/tablet/jpg/ivanova-354@3x.jpg 3x"
+                            media="(max-width: 1199px)"/>
+                        <source type="image/webp"
+                            srcset="./images/desktop/webp/ivanova-270.webp 1x, 
+                                    ./images/desktop/webp/ivanova-270@2x.webp 2x,
+                                    ./images/desktop/webp/ivanova-270@3x.webp 3x"
+                            media="(min-width: 1200px)"/>
+                        <source type="image/jpeg"
+                            srcset="./images/desktop/jpg/ivanova-270.jpg 1x,
+                                    ./images/desktop/jpg/ivanova-270@2x.jpg 2x,
+                                    ./images/desktop/jpg/ivanova-270@3x.jpg 3x"
+                            media="(min-width: 1200px)"/>
+                        <img src="./images/mobile/jpg/ivanova-450.jpg" alt="Фото Ольги Ивановой" class="team-members__pic"/>
+                    </picture>
                     <div class="team-members__content">
                         <h3 class="team-members__name">Ольга Иванова</h3>
                         <p lang="en" class="team-members__pos">Frontend Developer</p>
@@ -293,7 +393,39 @@
                     </div>  
                 </li>
                 <li class="team-members__item">
-                    <img src="./images/mobile/jpg/shevchenko-450.jpg" width="450" height="320" alt="Robert Jakis Photo" class="team-members__pic">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="./images/mobile/webp/shevchenko-450.webp 1x, 
+                                    ./images/mobile/webp/shevchenko-450@2x.webp 2x,
+                                    ./images/mobile/webp/shevchenko-450@3x.webp 3x"
+                            media="(max-width: 767px)"/>        
+                        <source type="image/jpeg"
+                            srcset="./images/mobile/jpg/shevchenko-450.jpg 1x, 
+                                    ./images/mobile/jpg/shevchenko-450@2x.jpg 2x,
+                                    ./images/mobile/jpg/shevchenko-450@3x.jpg 3x"
+                            media="(max-width: 767px)"/>
+                        <source type="image/webp"
+                            srcset="./images/tablet/webp/shevchenko-354.webp 1x, 
+                                    ./images/tablet/webp/shevchenko-354@2x.webp 2x,
+                                    ./images/tablet/webp/shevchenko-354@3x.webp 3x"
+                            media="(max-width: 1199px)"/>        
+                        <source type="image/jpeg"
+                            srcset="./images/tablet/jpg/shevchenko-354.jpg 1x,
+                                    ./images/tablet/jpg/shevchenko-354@2x.jpg 2x,
+                                    ./images/tablet/jpg/shevchenko-354@3x.jpg 3x"
+                            media="(max-width: 1199px)"/>
+                        <source type="image/webp"
+                            srcset="./images/desktop/webp/shevchenko-270.webp 1x, 
+                                    ./images/desktop/webp/shevchenko-270@2x.webp 2x,
+                                    ./images/desktop/webp/shevchenko-270@3x.webp 3x"
+                            media="(min-width: 1200px)"/>
+                        <source type="image/jpeg"
+                            srcset="./images/desktop/jpg/shevchenko-270.jpg 1x,
+                                    ./images/desktop/jpg/shevchenko-270@2x.jpg 2x,
+                                    ./images/desktop/jpg/shevchenko-270@3x.jpg 3x"
+                            media="(min-width: 1200px)"/>
+                        <img src="./images/mobile/jpg/shevchenko-450.jpg" alt="Фото Андрея Шевченко" class="team-members__pic"/>
+                    </picture>
                     <div class="team-members__content">
                         <h3 class="team-members__name">Андрей Шевченко</h3>
                         <p lang="en" class="team-members__pos">Marketing</p>
@@ -338,8 +470,40 @@
                     </div>
                 </li>
                 <li class="team-members__item">
-                    <img src="./images/mobile/jpg/nikolaev-450.jpg" width="450" height="320" alt="Martin Doe Photo" class="team-members__pic">
-                    <div class="team-members__content">
+                    <picture>
+                        <source type="image/webp"
+                            srcset="./images/mobile/webp/nikolaev-450.webp 1x, 
+                                    ./images/mobile/webp/nikolaev-450@2x.webp 2x,
+                                    ./images/mobile/webp/nikolaev-450@3x.webp 3x"
+                            media="(max-width: 767px)"/>        
+                        <source type="image/jpeg"
+                            srcset="./images/mobile/jpg/nikolaev-450.jpg 1x, 
+                                    ./images/mobile/jpg/nikolaev-450@2x.jpg 2x,
+                                    ./images/mobile/jpg/nikolaev-450@3x.jpg 3x"
+                            media="(max-width: 767px)"/>
+                        <source type="image/webp"
+                            srcset="./images/tablet/webp/nikolaev-354.webp 1x, 
+                                    ./images/tablet/webp/nikolaev-354@2x.webp 2x,
+                                    ./images/tablet/webp/nikolaev-354@3x.webp 3x"
+                            media="(max-width: 1199px)"/>        
+                        <source type="image/jpeg"
+                            srcset="./images/tablet/jpg/nikolaev-354.jpg 1x,
+                                    ./images/tablet/jpg/nikolaev-354@2x.jpg 2x,
+                                    ./images/tablet/jpg/nikolaev-354@3x.jpg 3x"
+                            media="(max-width: 1199px)"/>
+                        <source type="image/webp"
+                            srcset="./images/desktop/webp/nikolaev-270.webp 1x, 
+                                    ./images/desktop/webp/nikolaev-270@2x.webp 2x,
+                                    ./images/desktop/webp/nikolaev-270@3x.webp 3x"
+                            media="(min-width: 1200px)"/>
+                        <source type="image/jpeg"
+                            srcset="./images/desktop/jpg/nikolaev-270.jpg 1x,
+                                    ./images/desktop/jpg/nikolaev-270@2x.jpg 2x,
+                                    ./images/desktop/jpg/nikolaev-270@3x.jpg 3x"
+                            media="(min-width: 1200px)"/>
+                        <img src="./images/mobile/jpg/nikolaev-450.jpg" alt="Фото Ивана Николаева" class="team-members__pic"/>
+                    </picture>
+                    <div class="team-members__content"/>
                         <h3 class="team-members__name">Иван Николаев</h3>
                         <p lang="en" class="team-members__pos">UI Designer</p>
                         <ul class="socials">
@@ -509,7 +673,7 @@
                     <label class="footer__label">
                         <b class="footer__signup-title">Подпишитесь на рассылку</b>
                         <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="footer__email">
-                        <button type="submit" class="button button__primary">
+                        <button type="submit" class="button-primary">
                             Подписаться
                             <svg class="icon-plane" width="24" height="24">
                                 <use href="./images/sprite.svg#icon-plane"></use>
