@@ -14,18 +14,18 @@
     }
 })();
 
-// скрипт для скролла модалки
+// // скрипт для скролла модалки
 
-  document.querySelector('.hero__button').onclick = () => {
-    document.querySelector('.backdrop').classList.remove('is-hidden');
-    document.querySelector('body').style.overflow = 'hidden';
-  };
-  document.querySelector('.close-button').onclick = () => {
-    document.querySelector('.backdrop').classList.add('is-hidden');
-    document.querySelector('body').style.overflow = 'auto';
-  };
+//   document.querySelector('.hero__button').onclick = () => {
+//     document.querySelector('.backdrop').classList.remove('is-hidden');
+//     document.querySelector('body').style.overflow = 'hidden';
+//   };
+//   document.querySelector('.close-button').onclick = () => {
+//     document.querySelector('.backdrop').classList.add('is-hidden');
+//     document.querySelector('body').style.overflow = 'auto';
+//   };
 
-//скрипт для блокировки книпки отправить
+//скрипт для блокировки кнопки "отправить"
 
   const policy = document.getElementById('checkbox');
   policy.onchange = () => {
