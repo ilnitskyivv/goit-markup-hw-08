@@ -52,13 +52,18 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    fill: currentColor;
+    cursor: pointer;
 
-    transition: $function-duration $function-timing;
+    transform: rotate(0deg);
+    transition: fill $function-duration $function-timing, transform $function-duration $function-timing;
 
     &:hover,
     &:focus {
         fill: $accent-color;
-        transition: $function-duration $function-timing;
+
+        transform: rotate(180deg);
+        transition: fill $function-duration $function-timing, transform $function-duration $function-timing;
     }
   
     @media screen and (min-width: $tablet) {
@@ -72,6 +77,7 @@
   
 .menu-button.is-open .icon-cross {
     display: block;
+
 }
   
 .menu-button.is-open .icon-menu {
@@ -93,6 +99,12 @@
         width: 100%;
         padding-top: 60px;
         padding-bottom: 60px;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+
         border-top: 1px solid #ECECEC;
         background-color: $primary-white-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
@@ -114,7 +126,7 @@
     @extend %list;
     
     @media screen and (max-width: $up-to-tablet) {
-    margin-bottom: 60px;
+        margin-bottom: 60px;
     }
 
     @media screen and (min-width: $tablet) {
@@ -123,16 +135,21 @@
 }
     
 .site-nav__item:not(:last-child) {
-    margin-bottom: 40px;
+
+    @media screen and (max-width: $up-to-tablet) {
+        margin-bottom: 40px;
+    }
     
     @media screen and (min-width: $tablet) {
-        margin-bottom: 0;
         margin-right: 50px;
     }
 }
 
 .site-nav__link {
     @extend %link;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
     
     transition: $function-duration $function-timing;
 
@@ -163,14 +180,10 @@
         height: 4px;
         
         left: 0;
-        bottom: -8px;
+        bottom: 0;
         
         border-radius: 2px;
         background-color: $accent-color;
-        
-        @media screen and (min-width: $tablet) {
-            bottom: 0;
-        }
     }
 }  
 
@@ -190,11 +203,18 @@
         margin-bottom: 0;
     }
 }
+
+.contacts__item {
+    @media screen and (max-width: $up-to-tablet) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
     
 .contacts__item:not(:last-child) {
-    @media screen and (max-width: $up-to-tablet) {
-    margin-bottom: 16px;
-    }
+    // @media screen and (max-width: $up-to-tablet) {
+    // margin-bottom: 16px;
+    // }
 
     @media screen and (min-width: $desktop) {
         margin-right: 30px;
