@@ -257,6 +257,7 @@
 }
 
 .send-button:disabled {
+    color: $secondary-text-color;
     background-color: $clients-logos-bg;
     pointer-events: none;
 }
