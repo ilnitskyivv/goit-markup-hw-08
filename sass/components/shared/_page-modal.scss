@@ -8,6 +8,8 @@
     width: 100%;
     height: 100%;
     padding: 15px;
+
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     transition: opacity $function-duration $function-timing;
@@ -67,7 +69,7 @@
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: $primary-white-color;
+    background-color: transparent;
         
     transform: translate(-25%, 25%) scale(1);
     transition: transform $function-duration $function-timing;

@@ -73,65 +73,6 @@
                 <button class="button-primary hero__button" data-modal-open>Заказать услугу</button>
             </div>
         </div>
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button class="close-button" data-modal-close>
-                    <svg class="icon-close-btn" width="11" height="11">
-                        <use href="./images/sprite.svg#icon-close-btn" class="use"></use>
-                    </svg>
-                </button>
-                <form class="form"></form>
-                    <b class="form__caption">
-                     Оставьте свои данные, мы вам перезвоним
-                    </b>
-                    <div class="form__input-container">                    
-                        <label class="form__field">
-                            <input class="form__input" type="text" name="name" placeholder=" " autofocus required/>
-                            <span class="form__label">Имя</span>
-                            <span class="icon-input">
-                                <svg class="icon-person" width="18" height="18">
-                                    <use href="./images/sprite.svg#icon-person" class="use"></use>
-                                </svg>
-                            </span>
-                        </label>
-                        <label class="form__field">
-                            <input class="form__input" type="tel" name="tel" placeholder=" " required/>
-                            <span class="form__label">Телефон</span>
-                            <span class="icon-input">
-                                <svg class="icon-phone" width="18" height="18">
-                                    <use href="./images/sprite.svg#icon-phone" class="use"></use>
-                                </svg>
-                            </span>
-                        </label>
-                        <label class="form__field">
-                            <input class="form__input" type="email" name="email" placeholder=" " required/>
-                            <span class="form__label">Почта</span>
-                            <span class="icon-input">
-                                <svg class="icon-email" width="18" height="18">
-                                    <use href="./images/sprite.svg#icon-email" class="use"></use>
-                                </svg>
-                            </span>
-                        </label>                        
-                        <label class="form__field">
-                            <textarea class="form__input comment" name="comment" placeholder=" "></textarea>
-                            <span class="form__label comment__label">Комментарий</span>                            
-                        </label>
-                    </div>
-                    <div class="form__checkbox-container">
-                        <label class="form__field">
-                            <input type="checkbox" name="policy" class="form__checkbox" id="checkbox"/>
-                            <span class="icon-checkbox"></span>
-                            <span class="form__checkbox-label">Соглашаюсь с рассылкой и принимаю
-                                <span>
-                                <a href="#" class="policy">Условия договора</a>
-                                </span>
-                            </span> 
-                        </label>
-                    </div>
-                    <button type="submit" class="button-primary send-button" id="send" disabled>Отправить</button>
-                </form>
-            </div>
-        </div>
     </section>
     <!-- Преимущества -->
     <section class="features__section section">
@@ -646,14 +587,67 @@
             </div>
         </div>
     </footer>
-    <!-- <script>
-        const { height: pageHeaderHeight } = document
-          .querySelector(".page-header")
-          .getBoundingClientRect();
-  
-        document.body.style.paddingTop = `${pageHeaderHeight}px`;
-      </script> -->
-      <script src="./js/menu.js"></script>
-      <script src="./js/modal.js"></script>
+    <!-- Модальное окно Героя -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-button" data-modal-close>
+                <svg class="icon-close-btn" width="11" height="11">
+                    <use href="./images/sprite.svg#icon-close-btn" class="use"></use>
+                </svg>
+            </button>
+            <form class="form"></form>
+                <b class="form__caption">
+                 Оставьте свои данные, мы вам перезвоним
+                </b>
+                <div class="form__input-container">                    
+                    <label class="form__field">
+                        <input class="form__input" type="text" name="name" placeholder=" " autofocus required/>
+                        <span class="form__label">Имя</span>
+                        <span class="icon-input">
+                            <svg class="icon-person" width="18" height="18">
+                                <use href="./images/sprite.svg#icon-person" class="use"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="form__field">
+                        <input class="form__input" type="tel" name="tel" placeholder=" " required/>
+                        <span class="form__label">Телефон</span>
+                        <span class="icon-input">
+                            <svg class="icon-phone" width="18" height="18">
+                                <use href="./images/sprite.svg#icon-phone" class="use"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="form__field">
+                        <input class="form__input" type="email" name="email" placeholder=" " required/>
+                        <span class="form__label">Почта</span>
+                        <span class="icon-input">
+                            <svg class="icon-email" width="18" height="18">
+                                <use href="./images/sprite.svg#icon-email" class="use"></use>
+                            </svg>
+                        </span>
+                    </label>                        
+                    <label class="form__field">
+                        <textarea class="form__input comment" name="comment" placeholder=" "></textarea>
+                        <span class="form__label comment__label">Комментарий</span>                            
+                    </label>
+                </div>
+                <div class="form__checkbox-container">
+                    <label class="form__field">
+                        <input type="checkbox" name="policy" class="form__checkbox" id="checkbox"/>
+                        <span class="icon-checkbox"></span>
+                        <span class="form__checkbox-label">Соглашаюсь с рассылкой и принимаю
+                            <span>
+                            <a href="#" class="policy">Условия договора</a>
+                            </span>
+                        </span> 
+                    </label>
+                </div>
+                <button type="submit" class="button-primary send-button" id="send" disabled>Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
