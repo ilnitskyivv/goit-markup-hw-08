@@ -290,7 +290,7 @@ img {
   padding-left: 0;
 }
 
-.site-nav__link, .link-envelope, .link-smartphone, .contacts__link, .clients__rectangle, .address__item, .product__link {
+.site-nav__link, .contacts__link, .clients__rectangle, .address__item, .product__link {
   text-decoration: none;
   color: #212121;
 }
@@ -347,6 +347,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
   }
@@ -380,11 +381,18 @@ img {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .page-header {
@@ -418,13 +426,13 @@ img {
 
 .logo-header {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .logo-header {
-    padding-top: 25px;
+    padding-top: 26px;
     padding-bottom: 24px;
     margin-right: 80px;
   }
@@ -432,6 +440,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .logo-header {
+    padding-top: 25px;
     margin-right: 85px;
   }
 }
@@ -597,9 +606,25 @@ img {
   background-color: #2196F3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: auto;
     text-align: start;
   }
@@ -607,40 +632,29 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .contacts__item {
-    padding-top: 8px;
-    padding-bottom: 8px;
+  .contacts__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .link-envelope {
-    display: block;
-    padding-bottom: 5px;
-    padding-top: 19px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .link-smartphone {
-    display: block;
-    padding-top: 5px;
-    padding-bottom: 19px;
   }
 }
 
@@ -652,7 +666,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts__link {
-    display: block;
     padding-top: 32px;
     padding-bottom: 31px;
   }
@@ -935,7 +948,6 @@ img {
 
 .icon-close-btn {
   display: inline-block;
-  z-index: 999;
   width: 11px;
   height: 11px;
   fill: currentColor;
@@ -1744,8 +1756,28 @@ img {
   margin-right: 8px;
 }
 
-.button-secondary:not(:nth-last-child(-n+2)) {
-  margin-bottom: 15px;
+@media screen and (max-width: 403px) {
+  .button-secondary:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 295px) and (max-width: 767px) {
+  .button-secondary:not(:nth-last-child(-n+2)) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 404px) and (max-width: 767px) {
+  .button-secondary:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-secondary {
+    margin-bottom: 0;
+  }
 }
 
 .product__list {
@@ -1804,6 +1836,7 @@ img {
   }
   .product__item:nth-last-child(-n+1) {
     margin-bottom: 0;
+    margin-right: 0;
   }
 }
 

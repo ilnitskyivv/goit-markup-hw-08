@@ -50,8 +50,25 @@
         margin-right: 8px;
     }
 
-    &:not(:nth-last-child(-n+2)) {
-        margin-bottom: 15px;
+    @media screen and (max-width: 403px) {
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (min-width: 295px) and (max-width: $up-to-tablet) {
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 15px;
+        }
+    }
+    @media screen and (min-width: 404px) and (max-width: $up-to-tablet) {
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
     }
 }
 
@@ -104,6 +121,7 @@
         
         &:nth-last-child(-n+1) {
             margin-bottom: 0;
+            margin-right: 0;
         }
 
     }

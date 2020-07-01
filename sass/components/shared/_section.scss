@@ -10,7 +10,6 @@
 
 .section-title {
     margin-top: 0;
-    // margin-bottom: 50px;
     margin-bottom: 30px;
     
     font-weight: 700;
@@ -21,6 +20,8 @@
     color: $primary-text-color;
     
     @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        
         font-size: 36px;
         line-height: 1.17;
     }

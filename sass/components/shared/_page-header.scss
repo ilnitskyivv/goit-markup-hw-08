@@ -28,15 +28,16 @@
 
 .logo-header {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-bottom: 15px;
 
     @media screen and (min-width: $tablet) {
-        padding-top: 25px;
+        padding-top: 26px;
         padding-bottom: 24px;
         margin-right: 80px;
     }
     @media screen and (min-width: $desktop) {
+        padding-top: 25px;
         margin-right: 85px;
     }
 }
@@ -188,60 +189,45 @@
 }  
 
 // Contacts navigation
-    
+
 .contacts {
     @extend %list;
 
+    @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
+        flex-direction: column;
+        justify-content: center;
+        
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
     @media screen and (min-width: $tablet) {
-        display: block;
+        display: flex;
         margin-left: auto;
         text-align: start;
+
     }
     @media screen and (min-width: $desktop) {
-        display: flex;
+        align-items: center;
         margin-top: 0;
         margin-bottom: 0;
     }
 }
 
-.contacts__item {
-    @media screen and (max-width: $up-to-tablet) {
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
-}
-    
 .contacts__item:not(:last-child) {
-    // @media screen and (max-width: $up-to-tablet) {
-    // margin-bottom: 16px;
-    // }
+    @media screen and (max-width: $up-to-tablet) {
+    margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: $up-to-desktop) {
+        margin-bottom: 10px;
+        }
 
     @media screen and (min-width: $desktop) {
         margin-right: 30px;
     }
 }
 
-.link-envelope {
-    @extend %link;
-
-    @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
-        display: block;
-        padding-bottom: 5px;
-        padding-top: 19px;
-    }
-}
-
-
-.link-smartphone {
-    @extend %link;
-    
-    @media screen and (min-width: $tablet) and (max-width: $up-to-desktop) {
-        display: block;
-        padding-top: 5px;
-        padding-bottom: 19px;
-    }
-}
-    
 .contacts__link {
     @extend %link;
   
@@ -250,7 +236,6 @@
     transition: $function-duration $function-timing;
     
     @media screen and (min-width: $desktop) {
-        display: block;
         padding-top: 32px;
         padding-bottom: 31px;
     }

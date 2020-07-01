@@ -45,7 +45,7 @@
                 </nav>
                 <ul class="contacts">
                     <li class="contacts__item">
-                        <a href="mailto:info@devstudio.com" class="contacts__link link-envelope" title="Отравить Email">
+                        <a href="mailto:info@devstudio.com" class="contacts__link link-email" title="Отравить Email">
                             <svg class="icon-envelope icon-contacts" width="17" height="12">
                                 <use href="./images/sprite.svg#icon-envelope"></use>
                             </svg>
@@ -53,7 +53,7 @@
                         </a>
                     </li>
                     <li class="contacts__item">
-                        <a href="tel:+380961111111" class="contacts__link link-smartphone" title="Позвонить">
+                        <a href="tel:+380961111111" class="contacts__link link-tel" title="Позвонить">
                             <svg class="icon-smartphone icon-contacts" width="10" height="14.94">
                                 <use href="./images/sprite.svg#icon-smartphone" class="use"></use>
                             </svg>                        
@@ -572,17 +572,19 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer__subscription">
-                    <label class="footer__label">
-                        <b class="footer__signup-title">Подпишитесь на рассылку</b>
-                        <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="footer__email">
-                        <button type="submit" class="button-primary">
-                            Подписаться
-                            <svg class="icon-plane" width="24" height="24">
-                                <use href="./images/sprite.svg#icon-plane"></use>
-                            </svg>
-                        </button>
-                    </label>
+                <div class="footer__subscription"></div>
+                    <form>
+                        <label class="footer__label">
+                            <b class="footer__signup-title">Подпишитесь на рассылку</b>
+                            <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="footer__email">
+                            <button type="submit" class="button-primary">
+                                Подписаться
+                                <svg class="icon-plane" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-plane"></use>
+                                </svg>
+                            </button>
+                        </label>
+                    </form>
                 </div>
             </div>
         </div>

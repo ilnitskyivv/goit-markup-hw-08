@@ -1,4 +1,4 @@
-// Скрипт для непрохождения контента под шапку
+// Скрипт для непрохождения контента под фиксированую шапку
 <script>
     const { height: pageHeaderHeight } = document
       .querySelector(".page-header")
