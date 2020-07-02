@@ -1,6 +1,9 @@
+// скрипт выпадающего меню в шапке мобильной версии
+
 (() => {
     const menuBtnRef = document.querySelector("[data-menu-button]");
     const mobileMenuRef = document.querySelector("[data-menu]");
+    const heroSectionRef = document.querySelector ("[data-hero]");
   
     menuBtnRef.addEventListener("click", () => {
       const expanded =
@@ -10,5 +13,6 @@
       menuBtnRef.setAttribute("aria-expanded", !expanded);
   
       mobileMenuRef.classList.toggle("is-open");
+      heroSectionRef.classList.toggle("is-none");
     });
   })();

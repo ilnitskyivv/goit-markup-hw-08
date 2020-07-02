@@ -14,7 +14,7 @@
     }
 })();
 
-// // скрипт для скролла модалки
+// скрипт для скролла модалки
 
 //   document.querySelector('.hero__button').onclick = () => {
 //     document.querySelector('.backdrop').classList.remove('is-hidden');
@@ -25,7 +25,7 @@
 //     document.querySelector('body').style.overflow = 'auto';
 //   };
 
-//скрипт для блокировки кнопки "отправить"
+// скрипт для блокировки кнопки "отправить"
 
   const policy = document.getElementById('checkbox');
   policy.onchange = () => {

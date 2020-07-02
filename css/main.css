@@ -716,6 +716,12 @@ img {
   background-size: cover;
 }
 
+@media screen and (max-width: 767px) {
+  .hero.is-none {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/hero/hero-480.jpg);
